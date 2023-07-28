@@ -1,0 +1,123 @@
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: medium;
+  }
+  body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+  }
+
+
+  @media (max-width: 448) { 
+    .head .navbar{
+        display:none;
+    }
+  }
+
+  @media (min-width: 449px) {
+    .head .hamburg{
+        display:none;
+    }
+  }
+
+
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .title {
+    color: 	hsl(216, 91%, 58%);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  .navbar li a{
+    text-decoration: none;
+    color: #000000;
+  }
+
+
+  .login {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:	hsl(203, 89%, 53%) ;
+    color: white;
+    font-weight: 700;
+    height: 2.5rem;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.login img {
+  margin-right: 5px;
+}
+
+
+.faq-page {
+    margin: 0;
+    max-width: 1920px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+  }
+
+
+  .collapsible {
+    background-color: hsl(180, 60%, 90%);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
